@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #task-form {
+            margin-bottom: 20px;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        button {
+            margin-left: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Enter task name" required />
+        <input type="number" id="critical-number" placeholder="Critical number" required min="0" />
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Tasks</h2>
+    <div id="task-list"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
